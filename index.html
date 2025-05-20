@@ -203,192 +203,6 @@
         text-align: center;
       }
     }
-    .timeline {
-      margin: 3rem 0 2rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      background: linear-gradient(135deg, #f8fafc 0%, #f3f6fa 100%);
-      border-radius: 24px;
-      box-shadow: 0 2px 24px rgba(28,181,224,0.07);
-      padding: 2.5rem 1.5rem 2.5rem 1.5rem;
-      gap: 2.5rem;
-    }
-    .timeline-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 2.5rem;
-      width: 100%;
-      margin-bottom: 2.5rem;
-    }
-    .timeline-row:last-child {
-      margin-bottom: 0;
-    }
-    .timeline-step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 1px 8px rgba(28,181,224,0.06);
-      padding: 1.7rem 1.7rem 1.7rem 1.7rem;
-      position: relative;
-      z-index: 1;
-      min-width: 280px;
-      max-width: 340px;
-      width: 100%;
-      min-height: 240px;
-      transition: box-shadow 0.2s, transform 0.2s;
-      gap: 1.2rem;
-      flex: 1 1 0;
-    }
-    .timeline-step:last-child {
-      margin-bottom: 0;
-    }
-    .timeline-step-icon {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      color: #1cb5e0;
-      background: #f3f6fa;
-      border-radius: 50%;
-      margin: 0 0 0.7rem 0;
-      box-shadow: 0 2px 8px rgba(28,181,224,0.07);
-      flex-shrink: 0;
-      transition: background 0.2s, color 0.2s;
-    }
-    .timeline-step.active .timeline-step-icon {
-      background: linear-gradient(135deg, #1cb5e0 0%, #ffb347 100%);
-      color: #fff;
-    }
-    .timeline-step.final-step {
-      background: linear-gradient(90deg, #1cb5e0 0%, #ffb347 100%);
-      color: #fff;
-      box-shadow: 0 4px 32px rgba(28,181,224,0.13);
-      border: none;
-      min-width: 320px;
-      max-width: 480px;
-      min-height: 80px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 40px;
-      padding: 1.2rem 2.5rem 1.2rem 2.5rem;
-    }
-    .timeline-step.final-step .timeline-stepper,
-    .timeline-step.final-step .timeline-step-label {
-      display: none !important;
-    }
-    .timeline-step.final-step .timeline-step-icon {
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      color: #1cb5e0;
-      font-size: 2.5rem;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      margin-right: 1.5rem;
-      box-shadow: 0 2px 12px rgba(28,181,224,0.10);
-    }
-    .timeline-step.final-step .timeline-step-content {
-      color: #fff;
-      text-align: left;
-      font-size: 2rem;
-      font-weight: 900;
-      margin: 0;
-      letter-spacing: 1.5px;
-      background: none;
-      box-shadow: none;
-      padding: 0;
-      display: flex;
-      align-items: center;
-    }
-    .timeline-stepper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0.7rem;
-      position: relative;
-      z-index: 2;
-    }
-    .timeline-stepper-circle {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: #e0e0e0;
-      color: #888;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.2rem;
-      margin-bottom: 0.2rem;
-      border: 2.5px solid #e0e0e0;
-      transition: background 0.2s, color 0.2s, border 0.2s;
-      position: relative;
-      z-index: 2;
-    }
-    .timeline-step.active .timeline-stepper-circle {
-      background: linear-gradient(135deg, #1cb5e0 0%, #ffb347 100%);
-      color: #fff;
-      border: 2.5px solid #1cb5e0;
-      box-shadow: 0 2px 8px rgba(28,181,224,0.13);
-    }
-    .timeline-stepper-line {
-      width: 4px;
-      flex: 1 1 0;
-      min-height: 40px;
-      background: #e0e0e0;
-      margin: 0 auto;
-      border-radius: 2px;
-      transition: background 0.2s;
-    }
-    .timeline-step.active .timeline-stepper-line {
-      background: linear-gradient(180deg, #1cb5e0 0%, #ffb347 100%);
-    }
-    .timeline-step-content {
-      flex: 1;
-      color: #222;
-      font-size: 1.08rem;
-      font-weight: 500;
-      padding-top: 0.2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .timeline-step-label {
-      font-size: 0.92rem;
-      color: #888;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 0.2rem;
-    }
-    .timeline-step-title {
-      font-size: 1.13rem;
-      color: #181818;
-      font-weight: 700;
-      margin-bottom: 0.1rem;
-    }
-    .timeline-step-desc {
-      font-size: 1.01rem;
-      color: #444;
-      font-weight: 500;
-    }
     .contact-section {
       background: #222 url('img/form-background.jfif') center center/cover no-repeat;
       color: #fff;
@@ -908,77 +722,6 @@
     </div>
   </section>
 
-  <!-- Timeline Section -->
-  <section class="container" id="setup">
-    <div class="section-title">KÄYTTÖÖNOTTO</div>
-    <div class="timeline">
-      <div class="timeline-row">
-        <div class="timeline-step active">
-          <div class="timeline-stepper">
-            <div class="timeline-stepper-circle">1</div>
-            <div class="timeline-stepper-line"></div>
-          </div>
-          <div class="timeline-step-icon"><span class="bi bi-info-circle"></span></div>
-          <div class="timeline-step-content">
-            <div class="timeline-step-label">STEP 1</div>
-            <div class="timeline-step-title">Mene tänne ja anna yrityksen tiedot</div>
-            <div class="timeline-step-desc">Kun olet antanut tiedot, saat viestin antamaasi sähköpostiin. Sähköpostissa on ohjeet palvelun käyttöönottoon.</div>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-stepper">
-            <div class="timeline-stepper-circle">2</div>
-            <div class="timeline-stepper-line"></div>
-          </div>
-          <div class="timeline-step-icon"><span class="bi bi-laptop"></span></div>
-          <div class="timeline-step-content">
-            <div class="timeline-step-label">STEP 2</div>
-            <div class="timeline-step-title">Ota palvelu käyttöön noin 5 minuutissa</div>
-            <div class="timeline-step-desc">Seuraa sähköpostin ohjeita. Kun olet käynyt läpi ohjeet, palvelu on käytössäsi.</div>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-stepper">
-            <div class="timeline-stepper-circle">3</div>
-            <div class="timeline-stepper-line"></div>
-          </div>
-          <div class="timeline-step-icon"><span class="bi bi-wrench"></span></div>
-          <div class="timeline-step-content">
-            <div class="timeline-step-label">STEP 3</div>
-            <div class="timeline-step-title">Kirjaudu palveluun ja lisää palvelut joita asiakkaat voivat varata.</div>
-            <div class="timeline-step-desc">Voit lisätä tämän jälkeen linkin kotisivuillesi, jotta asiakkaat pääsevät tekemään varauksia vaivattomasti ja nopeasti.</div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-row">
-        <div class="timeline-step">
-          <div class="timeline-stepper">
-            <div class="timeline-stepper-circle">4</div>
-            <div class="timeline-stepper-line"></div>
-          </div>
-          <div class="timeline-step-icon"><span class="bi bi-calendar-event"></span></div>
-          <div class="timeline-step-content">
-            <div class="timeline-step-label">STEP 4</div>
-            <div class="timeline-step-title">Asiakkaat voivat aloittaa palveluiden varaukset</div>
-            <div class="timeline-step-desc">Näet varaukset omasta kalenteristasi, joten voit suunnitella päiväsi tehokkaammin. Palvelun voi ottaa pois käytöstä lomien ja jne. ajaksi.</div>
-          </div>
-        </div>
-        <div class="timeline-step">
-          <div class="timeline-stepper">
-            <div class="timeline-stepper-circle">5</div>
-            <div class="timeline-stepper-line"></div>
-          </div>
-          <div class="timeline-step-icon"><span class="bi bi-patch-check-fill"></span></div>
-          <div class="timeline-step-content">
-            <div class="timeline-step-label">STEP 5</div>
-            <div class="timeline-step-title">Valmis käyttöön!</div>
-            <div class="timeline-step-desc">Onnittelut! Ajanvarauspalvelu on nyt käytössäsi. Voit alkaa vastaanottamaan varauksia ja hallinnoimaan kalenteriasi tehokkaasti.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Screenshots Section -->
   <section class="container py-5" id="screenshots">
     <div class="section-title">SOVELLUKSEN KUVAT</div>
@@ -1041,7 +784,7 @@
   <section class="contact-section" id="contact">
     <div class="container position-relative" style="z-index:2;">
       <form action="https://formspree.io/f/mnndvnkb" method="POST" id="contactForm">
-        <h3 class="mb-4">KYSYMYKSIÄ?</h3>
+        <h3 class="mb-4">Luo varaus nyt</h3>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
@@ -1101,7 +844,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-center">
-          <button type="submit" class="btn">LÄHETÄ</button>
+          <button type="submit" class="btn">LUO VARAUS</button>
         </div>
       </form>
       <div class="success-message" id="successMessage">
